@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#555" >
+
+        <EditText
+            android:id="@+id/edittext_sentence"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginTop="2dip"
+            android:layout_weight="11"
+            android:ems="10"
+            android:hint="Insira seu texto selecionando símbolos..."
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="0dip"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="4dip"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="false"
+            android:cropToPadding="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_audio" />
+    </TableRow>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@drawable/gradient_bg_textbar" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/imageViewL"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/symbol_arrow_margin_topdown"
+            android:layout_marginLeft="@dimen/symbol_arrow_margin"
+            android:layout_marginRight="@dimen/symbol_arrow_margin"
+            android:layout_marginTop="@dimen/symbol_arrow_margin_topdown"
+            android:layout_weight="1"
+            android:background="@drawable/symbol_bg_arrow"
+            android:src="@drawable/ic_play_left"
+            android:tag="navLeft" />
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="10" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/symbol_margin"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imageViewUp1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/symbol_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/symbol_bg"
+                    android:src="@drawable/ic_folder_yellow"
+                    android:tag="imgUp1" />
+
+                <ImageView
+                    android:id="@+id/imageViewUp2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/symbol_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/symbol_bg"
+                    android:src="@drawable/ic_folder_yellow"
+                    android:tag="imgUp2" />
+
+                <ImageView
+                    android:id="@+id/imageViewUp3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/symbol_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/symbol_bg"
+                    android:src="@drawable/ic_folder_yellow"
+                    android:tag="imgUp3" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewUp1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textViewUp2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textViewUp3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#fff" />
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/symbol_margin"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imageViewDown1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/symbol_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/symbol_bg"
+                    android:src="@drawable/ic_folder_yellow"
+                    android:tag="imgDown1" />
+
+                <ImageView
+                    android:id="@+id/imageViewDown2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/symbol_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/symbol_bg"
+                    android:src="@drawable/ic_folder_yellow"
+                    android:tag="imgDown2" />
+
+                <ImageView
+                    android:id="@+id/imageViewDown3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/symbol_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/symbol_bg"
+                    android:src="@drawable/ic_folder_yellow"
+                    android:tag="imgDown3" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewDown1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textViewDown2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textViewDown3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/imageViewR"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/symbol_arrow_margin_topdown"
+            android:layout_marginLeft="@dimen/symbol_arrow_margin"
+            android:layout_marginRight="@dimen/symbol_arrow_margin"
+            android:layout_marginTop="@dimen/symbol_arrow_margin_topdown"
+            android:layout_weight="1"
+            android:background="@drawable/symbol_bg_arrow"
+            android:src="@drawable/ic_play"
+            android:tag="navRight" />
+
+    </TableRow>
+
+
+</LinearLayout>

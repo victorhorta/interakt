@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_splash" >
+    <!-- 
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="214dip"
+        android:layout_height="230dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/interakt_logo"
+        android:contentDescription="@string/splash_content"
+        android:dither="true" />
+         -->
+
+</RelativeLayout>

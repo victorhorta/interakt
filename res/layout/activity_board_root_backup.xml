@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@drawable/symbol_bg_arrow"
+            android:id="@+id/imageViewL"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/symbol_arrow_margin"
+            android:layout_marginRight="@dimen/symbol_arrow_margin"
+            android:layout_marginTop="@dimen/symbol_arrow_margin_topdown"
+            android:layout_marginBottom="@dimen/symbol_arrow_margin_topdown"
+            android:rotation="180"
+            android:src="@drawable/ic_play" />
+
+        <TableLayout
+            android:layout_weight="10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <TableRow
+                android:layout_margin="@dimen/symbol_margin"
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imageViewUp1"
+                    android:background="@drawable/symbol_bg"
+                    android:layout_margin="@dimen/symbol_margin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_folder_yellow" />
+
+                <ImageView
+                    android:id="@+id/imageViewUp2"
+                    android:background="@drawable/symbol_bg"
+                    android:layout_margin="@dimen/symbol_margin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_folder_yellow" />
+
+                <ImageView
+                    android:id="@+id/imageViewUp3"
+                    android:background="@drawable/symbol_bg"
+                    android:layout_margin="@dimen/symbol_margin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_folder_yellow" />
+            </TableRow>
+
+            <TableRow
+                android:layout_margin="@dimen/symbol_margin"
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imageViewDown1"
+                    android:background="@drawable/symbol_bg"
+                    android:layout_margin="@dimen/symbol_margin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_folder_yellow" />
+
+                <ImageView
+                    android:id="@+id/imageViewDown2"
+                    android:background="@drawable/symbol_bg"
+                    android:layout_margin="@dimen/symbol_margin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_folder_yellow" />
+
+                <ImageView
+                    android:id="@+id/imageViewDown3"
+                    android:layout_margin="@dimen/symbol_margin"
+                    android:background="@drawable/symbol_bg"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_folder_yellow" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/symbol_arrow_margin"
+            android:layout_marginRight="@dimen/symbol_arrow_margin"
+            android:layout_marginTop="@dimen/symbol_arrow_margin_topdown"
+            android:layout_marginBottom="@dimen/symbol_arrow_margin_topdown"
+            android:background="@drawable/symbol_bg_arrow"
+            android:id="@+id/imageViewR"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_play" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.interakt.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!--
+         TODO: ATENCAO: DEVEREI TRATAR OS CASOS EM QUE A CAMERA NAO ESTIVER DISPONIVEL!!!
+          REF: http://developer.android.com/training/camera/photobasics.html
+    -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="me.interakt.app.Splashscreen"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="me.interakt.app.Intro"
+            android:label="@string/title_activity_intro"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="me.interakt.app.Main"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="me.interakt.app.ReadText"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="me.interakt.app.ReadBoard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="me.interakt.app.EditBoard"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black" >
+        </activity>
+        <activity
+            android:name="me.interakt.app.EditNodes"
+            android:screenOrientation="landscape"
+            android:label="@string/title_activity_edit_nodes" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="me.interakt.app.Main" />
+        </activity>
+    </application>
+
+</manifest>
