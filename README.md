@@ -1,4 +1,4 @@
 interakt
 ========
 
-intearKt - an Open-source Augmentative and Alternative Communication project
+interakt - an Open-source Augmentative and Alternative Communication project
